@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Math Magicians Calculator
+
+![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Academic-blue)
+![](https://img.shields.io/badge/HTML-red)
+![](https://img.shields.io/badge/JavaScript-yellow)
+![](https://img.shields.io/badge/CSS-blue)
+![](https://img.shields.io/badge/React-purple)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
