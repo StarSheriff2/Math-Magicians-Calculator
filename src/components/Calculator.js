@@ -4,6 +4,7 @@ import Display from './display';
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render() {

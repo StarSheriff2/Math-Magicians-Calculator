@@ -6,4 +6,9 @@
 .Calculator-container {
   max-width: 800px;
   background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "display display display display";
 }

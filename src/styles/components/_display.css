@@ -1,0 +1,10 @@
+
+.Display-container {
+  grid-area: display;
+}
+
+.Display-display {
+  text-align: end;
+  font-size: 3rem;
+  padding: 2rem 0.5rem;
+}
