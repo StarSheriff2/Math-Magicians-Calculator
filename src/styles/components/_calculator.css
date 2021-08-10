@@ -1,0 +1,9 @@
+@import './_display.css';
+:root {
+  --main-bg-color: rgb(200, 200, 200);
+}
+
+.Calculator-container {
+  max-width: 800px;
+  background-color: var(--main-bg-color);
+}
