@@ -1,5 +1,9 @@
 .Display-container {
+  --display-bg: #72788d;
+  --display-font-color: #f7f7f7;
   grid-area: display;
+  background-color: var(--display-bg);
+  color: var(--display-font-color);
 }
 
 .Display-display {

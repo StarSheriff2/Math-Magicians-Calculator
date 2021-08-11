@@ -1,13 +1,14 @@
 .Digits-container {
-  --left-side-color-scheme: rgb(222, 222, 222);
+  --buttons-gray: #efefef;
   --buttons-font-color: #191919;
   grid-area: digit;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
 }
 
 .Digits-btn {
-  background-color: var(--left-side-color-scheme);
+  background-color: var(--buttons-gray);
   color: var(--buttons-font-color);
 }
 

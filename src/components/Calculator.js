@@ -2,6 +2,8 @@ import React from 'react';
 import Display from './display';
 import OtherOperations from './otherOperations';
 import Digits from './digits';
+import Operators from './operators';
+import Equal from './equal';
 
 export default class Calculator extends React.Component {
   constructor(props) {
@@ -15,6 +17,8 @@ export default class Calculator extends React.Component {
         <Display />
         <OtherOperations />
         <Digits />
+        <Operators />
+        <Equal />
       </div>
     )
   }

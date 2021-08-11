@@ -1,6 +1,8 @@
 @import './_display.css';
 @import './_otherOperations.css';
 @import './_digits.css';
+@import './_operators.css';
+@import './_equal.css';
 
 /* color scheme: https://coolors.co/e79650-191919-f7f7f7-efefef-72788d */
 
@@ -25,7 +27,8 @@
     "digit digit digit operation"
     "digit digit digit operation"
     "digit digit digit operation"
-    "digit digit digit operation";
+    "digit digit digit equal";
+  gap: 3px;
 }
 
 .btn {

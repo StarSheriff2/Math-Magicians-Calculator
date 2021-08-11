@@ -1,0 +1,11 @@
+.Equal-container {
+  --buttons-orange: #e79650;
+  --buttons-font-color: #191919;
+  grid-area: equal;
+}
+
+.Equal-btn {
+  background-color: var(--buttons-orange);
+  color: var(--buttons-font-color);
+  width: 100%;
+}
