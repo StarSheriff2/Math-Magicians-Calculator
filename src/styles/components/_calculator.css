@@ -1,8 +1,16 @@
 @import './_display.css';
 @import './_otherOperations.css';
+@import './_digits.css';
+
+/* color scheme: https://coolors.co/e79650-191919-f7f7f7-efefef-72788d */
 
 :root {
-  --main-bg-color: rgb(200, 200, 200);
+  --main-bg-color: #f7f7f7;
+  --display-bg: #72788d;
+  --display-font-color: #f7f7f7;
+  --buttons-orange: #e79650;
+  --buttons-gray: #efefef;
+  --buttons-font-color: #191919;
 }
 
 .Calculator-container {
@@ -13,7 +21,11 @@
   grid-template-rows: auto;
   grid-template-areas:
     "display display display display"
-    "other-operations other-operations other-operations .";
+    "other-operation other-operation other-operation operation"
+    "digit digit digit operation"
+    "digit digit digit operation"
+    "digit digit digit operation"
+    "digit digit digit operation";
 }
 
 .btn {

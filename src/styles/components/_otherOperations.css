@@ -1,5 +1,5 @@
 .Other-Operations-container {
-  grid-area: other-operations;
+  grid-area: other-operation;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
