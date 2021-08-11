@@ -1,0 +1,53 @@
+@import './_display.css';
+@import './_otherOperations.css';
+@import './_digits.css';
+@import './_operators.css';
+@import './_equal.css';
+
+/* color scheme: https://coolors.co/e79650-191919-f7f7f7-efefef-72788d */
+
+:root {
+  --main-bg-color: #f7f7f7;
+  --display-bg: #72788d;
+  --display-font-color: #f7f7f7;
+  --buttons-orange: #e79650;
+  --buttons-gray: #efefef;
+  --buttons-font-color: #191919;
+}
+
+.Calculator-container {
+  max-width: 600px;
+  margin: 5rem auto 0;
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "display display display display"
+    "other-operation other-operation other-operation operation"
+    "digit digit digit operation"
+    "digit digit digit operation"
+    "digit digit digit operation"
+    "digit digit digit equal";
+  gap: 3px;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 2rem 3rem;
+}
+
+/*
+  ========================
+
+  Media Queries
+
+  ========================
+*/
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+  .btn {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,15 @@
+.Operators-container {
+  --buttons-orange: #e79650;
+  --buttons-font-color: #191919;
+
+  grid-area: operation;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 3px;
+}
+
+.Operators-btn {
+  background-color: var(--buttons-orange);
+  color: var(--buttons-font-color);
+}

@@ -1,0 +1,18 @@
+.Digits-container {
+  --buttons-gray: #efefef;
+  --buttons-font-color: #191919;
+
+  grid-area: digit;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.Digits-btn {
+  background-color: var(--buttons-gray);
+  color: var(--buttons-font-color);
+}
+
+.zero-btn {
+  grid-column: span 2;
+}
