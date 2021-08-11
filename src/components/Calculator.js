@@ -20,22 +20,23 @@ import operate from '../logic/operate';
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       total: null,
       next: null,
       operation: null,
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName) {
-    console.log(buttonName);
+  async handleClick(buttonName) {
+    await this.setState( { total: parseInt(buttonName, 10) } );
+    console.log(this.state.total)
   }
 
   render() {
     return (
       <div className="Calculator-container">
-        <Display />
+        <Display total = { this.state.total }/>
         <OtherOperations />
         <Digits handleClick = { this.handleClick }/>
         <Operators />
