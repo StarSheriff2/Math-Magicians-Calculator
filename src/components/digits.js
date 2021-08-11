@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default class Digits extends React.Component {
   constructor(props) {
     super(props);
@@ -20,6 +21,6 @@ export default class Digits extends React.Component {
         <button type="button" className="Digits-btn zero-btn btn">0</button>
         <button type="button" className="Digits-btn btn">.</button>
       </div>
-    )
+    );
   }
-};
+}

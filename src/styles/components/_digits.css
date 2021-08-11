@@ -1,6 +1,7 @@
 .Digits-container {
   --buttons-gray: #efefef;
   --buttons-font-color: #191919;
+
   grid-area: digit;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

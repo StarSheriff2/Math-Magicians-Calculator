@@ -11,6 +11,6 @@ export default class Display extends React.Component {
       <div className="Display-container">
         <p className="Display-display">0</p>
       </div>
-    )
+    );
   }
-};
+}

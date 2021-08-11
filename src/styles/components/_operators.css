@@ -1,6 +1,7 @@
 .Operators-container {
   --buttons-orange: #e79650;
   --buttons-font-color: #191919;
+
   grid-area: operation;
   display: grid;
   grid-template-columns: 1fr;

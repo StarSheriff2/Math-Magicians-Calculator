@@ -1,6 +1,7 @@
 .Equal-container {
   --buttons-orange: #e79650;
   --buttons-font-color: #191919;
+
   grid-area: equal;
 }
 

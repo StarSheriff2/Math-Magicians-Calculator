@@ -11,6 +11,6 @@ export default class Equal extends React.Component {
       <div className="Equal-container">
         <button type="button" className="Equal-btn btn">=</button>
       </div>
-    )
+    );
   }
-};
+}

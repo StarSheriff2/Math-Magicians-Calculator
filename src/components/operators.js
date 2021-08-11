@@ -14,6 +14,6 @@ export default class Operators extends React.Component {
         <button type="button" className="Operators-btn btn">−</button>
         <button type="button" className="Operators-btn btn">+</button>
       </div>
-    )
+    );
   }
-};
+}

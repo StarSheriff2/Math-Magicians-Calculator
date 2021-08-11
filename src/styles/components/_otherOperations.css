@@ -1,5 +1,6 @@
 .Other-Operations-container {
   --buttons-gray: #efefef;
+
   grid-area: other-operation;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

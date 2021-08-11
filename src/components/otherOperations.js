@@ -13,6 +13,6 @@ export default class OtherOperations extends React.Component {
         <button type="button" className="Other-Operations-btn btn">+ / -</button>
         <button type="button" className="Other-Operations-btn btn">%</button>
       </div>
-    )
+    );
   }
-};
+}
