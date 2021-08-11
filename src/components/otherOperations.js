@@ -9,9 +9,9 @@ export default class OtherOperations extends React.Component {
   render() {
     return (
       <div className="Other-Operations-container">
-        <button type="button" className="Other-Operations-btn btn">AC</button>
-        <button type="button" className="Other-Operations-btn btn">+ / -</button>
-        <button type="button" className="Other-Operations-btn btn">%</button>
+        <button type="button" className="Other-Operations-btn btn" value="AC">AC</button>
+        <button type="button" className="Other-Operations-btn btn" value="-">+ / -</button>
+        <button type="button" className="Other-Operations-btn btn" value="%">%</button>
       </div>
     );
   }

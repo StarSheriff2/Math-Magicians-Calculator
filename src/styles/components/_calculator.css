@@ -16,7 +16,8 @@
 }
 
 .Calculator-container {
-  max-width: 800px;
+  max-width: 600px;
+  margin: 5rem auto 0;
   background-color: var(--main-bg-color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,4 +35,19 @@
 .btn {
   font-size: 1rem;
   padding: 2rem 3rem;
+}
+
+/*
+  ========================
+
+  Media Queries
+
+  ========================
+*/
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+  .btn {
+    font-size: 2rem;
+  }
 }

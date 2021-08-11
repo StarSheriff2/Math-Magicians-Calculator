@@ -4,6 +4,7 @@
   grid-area: other-operation;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
 }
 
 .Other-Operations-btn {

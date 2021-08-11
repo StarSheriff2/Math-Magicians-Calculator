@@ -9,10 +9,10 @@ export default class Operators extends React.Component {
   render() {
     return (
       <div className="Operators-container">
-        <button type="button" className="Operators-btn btn">÷</button>
-        <button type="button" className="Operators-btn btn">×</button>
-        <button type="button" className="Operators-btn btn">−</button>
-        <button type="button" className="Operators-btn btn">+</button>
+        <button type="button" className="Operators-btn btn" value="/">÷</button>
+        <button type="button" className="Operators-btn btn" value="*">×</button>
+        <button type="button" className="Operators-btn btn" value="-">−</button>
+        <button type="button" className="Operators-btn btn" value="+">+</button>
       </div>
     );
   }
