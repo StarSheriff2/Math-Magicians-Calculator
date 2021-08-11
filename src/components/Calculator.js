@@ -1,5 +1,6 @@
 import React from 'react';
 import Display from './display';
+import OtherOperations from './otherOperations';
 
 export default class Calculator extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class Calculator extends React.Component {
     return (
       <div className="Calculator-container">
         <Display />
+        <OtherOperations />
       </div>
     )
   }

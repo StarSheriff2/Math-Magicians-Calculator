@@ -1,4 +1,6 @@
 @import './_display.css';
+@import './_otherOperations.css';
+
 :root {
   --main-bg-color: rgb(200, 200, 200);
 }
@@ -10,5 +12,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "display display display display";
+    "display display display display"
+    "other-operations other-operations other-operations .";
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 2rem 3rem;
 }
