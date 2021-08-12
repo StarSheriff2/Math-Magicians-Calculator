@@ -29,16 +29,18 @@ export default class Calculator extends React.Component {
   }
 
   async handleClick(buttonName) {
-    await this.setState( { total: parseInt(buttonName, 10) } );
-    console.log(this.state.total)
+    await this.setState({ total: buttonName });
+    console.log(this.state.total);
   }
 
   render() {
+    const { total } = this.state;
+
     return (
       <div className="Calculator-container">
-        <Display total = { this.state.total }/>
+        <Display total={total} />
         <OtherOperations />
-        <Digits handleClick = { this.handleClick }/>
+        <Digits handleClick={this.handleClick} />
         <Operators />
         <Equal />
       </div>
