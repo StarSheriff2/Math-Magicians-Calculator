@@ -25,7 +25,7 @@ See demo here [https://starsheriff2.github.io/Math-Magicians-Calculator/](https:
 - react 17.0.2
 - Jest-dom 5.11.4
 - gh-pages 3.2.3
-- Linters: ESLint, Stylint, WebHint
+- Linters: ESLint, Stylint
 - VS Code
 
 ## Getting Started
