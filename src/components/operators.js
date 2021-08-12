@@ -17,7 +17,7 @@ export default class Operators extends React.Component {
     return (
       <div className="Operators-container">
         <button onClick={this.handleClick} type="button" className="Operators-btn btn" value="÷">÷</button>
-        <button onClick={this.handleClick} type="button" className="Operators-btn btn" value="×">×</button>
+        <button onClick={this.handleClick} type="button" className="Operators-btn btn" value="x">×</button>
         <button onClick={this.handleClick} type="button" className="Operators-btn btn" value="-">−</button>
         <button onClick={this.handleClick} type="button" className="Operators-btn btn" value="+">+</button>
       </div>

@@ -5,7 +5,6 @@ import Digits from './digits';
 import Operators from './operators';
 import Equal from './equal';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 /**
  * Given a button name and a calculator data object, return an updated
@@ -21,6 +20,7 @@ export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateState = this.updateState.bind(this);
     this.state = {
       total: null,
       next: null,
@@ -29,13 +29,16 @@ export default class Calculator extends React.Component {
   }
 
   async handleClick(buttonName) {
-    await this.setState({ total: buttonName });
-    console.log(this.state.total);
+    const output = await calculate(this.state, buttonName);
+    this.updateState(output);
+  }
+
+  updateState(newState) {
+    this.setState({ ...newState });
   }
 
   render() {
-    const { total } = this.state;
-    const { next } = this.state;
+    const { total, next } = this.state;
 
     return (
       <div className="Calculator-container">

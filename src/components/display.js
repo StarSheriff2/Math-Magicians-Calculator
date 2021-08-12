@@ -9,6 +9,9 @@ const isNull = (prop) => {
 };
 
 const current = (total, next) => {
+  if (total && next) {
+    return isNull(next);
+  }
   if (total) {
     return total;
   }
