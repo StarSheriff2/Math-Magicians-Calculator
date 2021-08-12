@@ -6,16 +6,6 @@ import Operators from './operators';
 import Equal from './equal';
 import calculate from '../logic/calculate';
 
-/**
- * Given a button name and a calculator data object, return an updated
- * calculator data object.
- *
- * Calculator data object contains:
- *   total:s      the running total
- *   next:String       the next number to be operated on with the total
- *   operation:String  +, -, etc.
- */
-
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
@@ -28,8 +18,8 @@ export default class Calculator extends React.Component {
     };
   }
 
-  async handleClick(buttonName) {
-    const output = await calculate(this.state, buttonName);
+  handleClick(buttonName) {
+    const output = calculate(this.state, buttonName);
     this.updateState(output);
   }
 
