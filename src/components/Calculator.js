@@ -35,14 +35,18 @@ export default class Calculator extends React.Component {
 
   render() {
     const { total } = this.state;
+    const { next } = this.state;
 
     return (
       <div className="Calculator-container">
-        <Display total={total} />
-        <OtherOperations />
+        <Display
+          total={total}
+          next={next}
+        />
+        <OtherOperations handleClick={this.handleClick} />
         <Digits handleClick={this.handleClick} />
         <Operators handleClick={this.handleClick} />
-        <Equal />
+        <Equal handleClick={this.handleClick} />
       </div>
     );
   }
