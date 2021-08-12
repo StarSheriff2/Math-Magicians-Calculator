@@ -41,7 +41,7 @@ export default class Calculator extends React.Component {
         <Display total={total} />
         <OtherOperations />
         <Digits handleClick={this.handleClick} />
-        <Operators />
+        <Operators handleClick={this.handleClick} />
         <Equal />
       </div>
     );
