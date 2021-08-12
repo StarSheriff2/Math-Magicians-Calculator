@@ -11,30 +11,67 @@ This is a simple Calculator I built with React employing best practices, such as
 
 ## About
 Math Magicians can compute all basic math operations.
-
-The Kanban methodology was employed to work in this project, where each developer owned one main feature implementation.
 ### Features:
-- Browse through a list of all elements in the **monsters** category
-- Like any monster
-- See information about each monster by clicking on the comment button
-- Comment on any monster card
+- Perform basic arithmetic operations
+- View operations in display
 ### Live Demo
-See demo here [https://starsheriff2.github.io/Javascript-API-Page/](https://starsheriff2.github.io/Javascript-API-Page/)
+See demo here [https://starsheriff2.github.io/Math-Magicians-Calculator/](https://starsheriff2.github.io/Math-Magicians-Calculator/)
 
 ### Built With
 - HTML, CSS, JS
 - NPM 7.18.1
-- Webpack 5.48.0
-- HtmlWebpackPlugin
-- webpack-dev-server 3.11.2
-- Jest 27.0.6
+- big.js 5.2.2
+- prop-types 15.7.2
+- react 17.0.2
+- Jest-dom 5.11.4
+- gh-pages 3.2.3
 - Linters: ESLint, Stylint, WebHint
 - VS Code
 
+## Getting Started
 
-## Available Scripts
+To get a local copy up and running, follow these simple example steps.
 
-In the project directory, you can run:
+### Prerequisites
+- A browser to open the main file
+- Node.js
+- NPM
+- Yarn
+
+### Setup
+1. Open your terminal or command prompt.
+2. If you do not have git installed in your system, skip this step and go to step 3; otherwise, go to the directory where you want to copy the project files and clone it by copying this text into your command prompt/terminal: `git@github.com:StarSheriff2/Math-Magicians-Calculator.git`.
+<br>Now go to the ***"Install Dependencies"*** section
+3. Download the program files by clicking on the green button that says “**Code**” on the upper right side of the project frame.
+4. You will see a dropdown menu. Click on “**Download ZIP**.”
+5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want in your system.
+
+### Install Dependencies
+1. Go to the root directory of the project
+2. In your command line, while in the root dir, type `npm install`. It will install all necessary dependencies in your project files
+3. Now type `yarn start`. It will load the project in your default browser.<br><br>
+**Note:<br>_This command will not stop on its own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
+
+## Development
+
+### Bundle project
+
+- `yarn build`
+### Testing
+To test, run
+
+- `yarn test`
+
+### Linters
+To run the linters included in this repository, go to the root directory of your repository and copy/paste the following commands into your terminal:
+(**Note:** Make sure you run `npm install` before you do this)
+- for ESlint, `npx eslint.`
+- for Stylelint, `npx stylelint "**/*.{css,scss}"`
+
+### All Available Scripts
+
+<details>
+  <summary>In the project directory, you can run:</summary>
 
 ### `yarn start`
 
@@ -68,8 +105,30 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+</details>
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- You will need a mouse to be to use for the moment
 
+## Author
+👤 **Arturo Alvarez**
+- Github: [@StarSheriff2](https://github.com/StarSheriff2)
+- Twitter: [@ArturoAlvarezV](https://twitter.com/ArturoAlvarezV)
+- Linkedin: [Arturo Alvarez](https://www.linkedin.com/in/arturoalvarezv/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/StarSheriff2/Math-Magicians-Calculator/issues).
+
+## 🤝 Acknowledgements
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://github.com/StarSheriff2/Math-Magicians-Calculator/blob/development/LICENSE) licensed.
