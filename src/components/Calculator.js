@@ -6,7 +6,7 @@ import Operators from './operators';
 import Equal from './equal';
 import calculate from '../logic/calculate';
 
-export default function Calculator() {
+const Calculator = () => {
   const initialObj = { total: null, next: null, operation: null };
   const [state, setState] = useState(initialObj);
 
@@ -29,4 +29,6 @@ export default function Calculator() {
       <Equal handleClick={handleClick} />
     </div>
   );
-}
+};
+
+export default Calculator;
