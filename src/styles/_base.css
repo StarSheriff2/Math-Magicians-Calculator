@@ -36,6 +36,10 @@ a:hover {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .hidden {
   position: absolute;
   left: -100000px;
