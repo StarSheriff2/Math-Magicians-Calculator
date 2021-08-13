@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Digits(props) {
+const Digits = (props) => {
   const handleClick = (e) => {
     const { handleClick } = props;
     handleClick(e.target.value);
@@ -22,8 +22,10 @@ export default function Digits(props) {
       <button onClick={handleClick} type="button" className="Digits-btn btn" value=".">.</button>
     </div>
   );
-}
+};
 
 Digits.propTypes = { handleClick: PropTypes.func };
 
 Digits.defaultProps = { handleClick: null };
+
+export default Digits;
