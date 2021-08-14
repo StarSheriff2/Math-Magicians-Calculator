@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Display from './display';
 import OtherOperations from './otherOperations';
 import Digits from './digits';
@@ -18,9 +18,18 @@ const Calculator = () => {
     setState({ total: 'Invalid operation: Can\'t Divide by Zero', next: null, operation: null });
   };
 
+  useEffect(() => {
+    if ('savedInput' in error) {
+      setError({ status: false });
+
+      const output = calculate(state, error.savedInput);
+      updateState(output);
+    }
+  }, [error]);
+
   const handleClick = (buttonName) => {
     if (error.status) {
-      setError({ status: false });
+      setError({ savedInput: buttonName });
       setState(initialObj);
       return;
     }
