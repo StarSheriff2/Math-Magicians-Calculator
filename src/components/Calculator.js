@@ -9,11 +9,28 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const initialObj = { total: null, next: null, operation: null };
   const [state, setState] = useState(initialObj);
+  const [error, setError] = useState({ status: false });
 
   const updateState = (newState) => setState((actualState) => ({ ...actualState, ...newState }));
 
+  const errorHandler = () => {
+    setError({ status: true });
+    setState({ total: 'Invalid operation: Can\'t Divide by Zero', next: null, operation: null });
+  };
+
   const handleClick = (buttonName) => {
-    const output = calculate(state, buttonName);
+    if (error.status) {
+      setError({ status: false });
+      setState(initialObj);
+      return;
+    }
+
+    let output;
+    try {
+      output = calculate(state, buttonName);
+    } catch (err) {
+      errorHandler();
+    }
     updateState(output);
   };
 
