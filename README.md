@@ -7,13 +7,14 @@
 ![](https://img.shields.io/badge/CSS-blue)
 ![](https://img.shields.io/badge/React-purple)
 
-This is a simple Calculator I built with React employing best practices, such as lift state, destructuring, and passing props to child components. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Calculator I built with React employing hooks and best practices, such as lift state, destructuring, and passing props to child components. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About
-Math Magicians can compute all basic math operations.
+Math Magicians can compute all basic math operations. I used hooks to handle state. Invalid operation errors are successfully handled through ***useEffect***.
 ### Features:
 - Perform basic arithmetic operations
 - View operations in display
+- Perform chain operations
 ### Live Demo
 See demo here [https://starsheriff2.github.io/Math-Magicians-Calculator/](https://starsheriff2.github.io/Math-Magicians-Calculator/)
 
