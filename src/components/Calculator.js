@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Display from './display';
 import OtherOperations from './otherOperations';
 import Digits from './digits';
@@ -6,41 +6,55 @@ import Operators from './operators';
 import Equal from './equal';
 import calculate from '../logic/calculate';
 
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.updateState = this.updateState.bind(this);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const initialObj = { total: null, next: null, operation: null };
+  const [state, setState] = useState(initialObj);
+  const [error, setError] = useState({ status: false });
 
-  handleClick(buttonName) {
-    const output = calculate(this.state, buttonName);
-    this.updateState(output);
-  }
+  const updateState = (newState) => setState((actualState) => ({ ...actualState, ...newState }));
 
-  updateState(newState) {
-    this.setState({ ...newState });
-  }
+  const errorHandler = () => {
+    setError({ status: true });
+    setState({ total: 'Invalid operation: Can\'t Divide by Zero', next: null, operation: null });
+  };
 
-  render() {
-    const { total, next } = this.state;
+  useEffect(() => {
+    if ('savedInput' in error) {
+      setError({ status: false });
 
-    return (
-      <div className="Calculator-container">
-        <Display
-          total={total}
-          next={next}
-        />
-        <OtherOperations handleClick={this.handleClick} />
-        <Digits handleClick={this.handleClick} />
-        <Operators handleClick={this.handleClick} />
-        <Equal handleClick={this.handleClick} />
-      </div>
-    );
-  }
-}
+      const output = calculate(state, error.savedInput);
+      updateState(output);
+    }
+  }, [error]);
+
+  const handleClick = (buttonName) => {
+    if (error.status) {
+      setError({ savedInput: buttonName });
+      setState(initialObj);
+      return;
+    }
+
+    let output;
+    try {
+      output = calculate(state, buttonName);
+    } catch (err) {
+      errorHandler();
+    }
+    updateState(output);
+  };
+
+  return (
+    <div className="Calculator-container">
+      <Display
+        total={state.total}
+        next={state.next}
+      />
+      <OtherOperations handleClick={handleClick} />
+      <Digits handleClick={handleClick} />
+      <Operators handleClick={handleClick} />
+      <Equal handleClick={handleClick} />
+    </div>
+  );
+};
+
+export default Calculator;

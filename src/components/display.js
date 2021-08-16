@@ -18,23 +18,15 @@ const current = (total, next) => {
   return isNull(next);
 };
 
-export default class Display extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Display = (props) => {
+  const { total, next } = props;
 
-  render() {
-    const { total } = this.props;
-    const { next } = this.props;
-
-    return (
-      <div className="Display-container">
-        <p className="Display-display">{ current(total, next) }</p>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="Display-container">
+      <p className="Display-display">{ current(total, next) }</p>
+    </div>
+  );
+};
 
 Display.defaultProps = {
   total: null,
@@ -45,3 +37,5 @@ Display.propTypes = {
   total: PropTypes.string,
   next: PropTypes.string,
 };
+
+export default Display;
