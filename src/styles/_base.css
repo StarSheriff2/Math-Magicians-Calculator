@@ -40,6 +40,11 @@ button {
   cursor: pointer;
 }
 
+.active-link {
+  color: white;
+  background-color: blue;
+}
+
 .hidden {
   position: absolute;
   left: -100000px;
