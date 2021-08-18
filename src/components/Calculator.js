@@ -44,15 +44,18 @@ const Calculator = () => {
   };
 
   return (
-    <div className="Calculator-container">
-      <Display
-        total={state.total}
-        next={state.next}
-      />
-      <OtherOperations handleClick={handleClick} />
-      <Digits handleClick={handleClick} />
-      <Operators handleClick={handleClick} />
-      <Equal handleClick={handleClick} />
+    <div className="page-container calculator-page-container">
+      <h2 className="page-title calculator-page-title">Let&apos;s do some Math</h2>
+      <div className="Calculator-container">
+        <Display
+          total={state.total}
+          next={state.next}
+        />
+        <OtherOperations handleClick={handleClick} />
+        <Digits handleClick={handleClick} />
+        <Operators handleClick={handleClick} />
+        <Equal handleClick={handleClick} />
+      </div>
     </div>
   );
 };
