@@ -1,2 +1,5 @@
 @import './_base.css';
+@import './pages/Home.css';
+@import './pages/Quote.css';
 @import './components/_calculator.css';
+@import './components/_header.css';

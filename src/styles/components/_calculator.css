@@ -15,9 +15,18 @@
   --buttons-font-color: #191919;
 }
 
+.calculator-page-container {
+  position: relative;
+}
+
+.calculator-page-title {
+  position: absolute;
+}
+
 .Calculator-container {
+  box-shadow: 0 5px 15px 10px rgba(114, 120, 141, 0.2);
   max-width: 600px;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   background-color: var(--main-bg-color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);

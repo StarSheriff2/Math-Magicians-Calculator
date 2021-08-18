@@ -10,30 +10,28 @@ const Navbar = () => {
     },
     {
       id: 2,
-      path: "/Calculator",
-      text: "Calculator",
+      path: '/Calculator',
+      text: 'Calculator',
     },
     {
       id: 3,
-      path: "/Quote",
-      text: "Quote",
+      path: '/Quote',
+      text: 'Quote',
     },
   ];
 
   return (
-    <nav>
-      <ul>
-        {links.map(link => {
-          return (
-            <li key={link.id}>
-              <NavLink to={link.path} activeClassName="active-link" exact>
-                {link.text}
-              </NavLink>
-            </li>
-          );
-        })}
+    <nav className="navbar">
+      <ul className="navbar-links">
+        {links.map((link) => (
+          <li key={link.id} className="navbar-link-li">
+            <NavLink to={link.path} activeClassName="active-link" className="navbar-link" exact>
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;
