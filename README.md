@@ -16,7 +16,10 @@ Math Magicians can compute all basic math operations. I used hooks to handle sta
 - View operations in display
 - Perform chain operations
 ### Live Demo
-See demo here [https://starsheriff2.github.io/Math-Magicians-Calculator/](https://starsheriff2.github.io/Math-Magicians-Calculator/)
+This site was deployed to Heroku and Netlify.
+
+[Heroku site](https://math-magicians-honduras.herokuapp.com)
+[Netlify site](https://objective-banach-636aa8.netlify.app)
 
 ### Built With
 - HTML, CSS, JS
@@ -26,6 +29,8 @@ See demo here [https://starsheriff2.github.io/Math-Magicians-Calculator/](https:
 - react 17.0.2
 - Jest-dom 5.11.4
 - gh-pages 3.2.3
+- Heroku
+- Netlify
 - Linters: ESLint, Stylint
 - VS Code
 
