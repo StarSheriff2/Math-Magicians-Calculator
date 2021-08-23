@@ -18,8 +18,8 @@ Math Magicians can compute all basic math operations. I used hooks to handle sta
 ### Live Demo
 This site was deployed to Heroku and Netlify.
 
-[Heroku site](https://math-magicians-honduras.herokuapp.com)
-[Netlify site](https://objective-banach-636aa8.netlify.app)
+- [Heroku site](https://math-magicians-honduras.herokuapp.com)
+- [Netlify site](https://objective-banach-636aa8.netlify.app)
 
 ### Built With
 - HTML, CSS, JS
